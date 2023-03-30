@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dietitian</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		a{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function fun(){
+			var phnn=document.getElementById("phone").value;
+      var m=String(phnn).length;
+      if(m!=10)
+      {
+        alert("Sorry!! The phone number you entered is of not 10 digits");
+      }
+      else
+      {
+        confirm("Successfully submitted");
+      }
+			document.getElementById('fname').value=null;
+			document.getElementById('lname').value=null;
+			document.getElementById('email').value=null;
+			document.getElementById('phone').value=null;
+			document.getElementById('msg').value=null;
+			
+		}
+	</script>
+	<nav class="navbar">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#" style="color:black;"><p style="font-family: fantasy; font-size: 25px;">Amy Kohler</p>&nbsp;&nbsp;&nbsp;Dietitian</a>
+    		</div>
+    		<ul class="nav navbar-nav navbar-right">
+      			<li class="active"><a href="index.html">Home</a></li>
+      			<li><a href="About.html">About</a></li>
+      			<li><a href="Services.html">Services</a></li>
+      			<li><a href="Pricing_Plans.html">Pricing Plans</a></li>
+      			<li><a href="Programs.html">Programs</a></li>
+      			<li><a href="Blog.html">Blog</a></li>
+      			<li><a href="Contact.html">Contact</a></li>
+      			<li><a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Log In </a></li>
+    		</ul>
+  		</div>
+	</nav>
+	<br/><br/>
+	<div class="container-fluid">
+		<div class="row" style="background: #d9f2e6;text-align: center;">
+			<h2 style="margin-top: 5vw;">Contact</h2>
+			<p style="margin-left:32vw;margin-right: 32vw;text-align: center;font-size: 1.5vw;margin-bottom: 5vw;">Wanna connect? Fill this form and we will get in touch with you as soon as possible.</p>
+		</div>
+	</div><br/><br/>
+	<div class="container">
+		<div class="row">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+				      	<label for="fname" class="control-label">First Name</label>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+				    <div class="col-md-3"></div>
+				    <div class="col-md-6">
+				      	<input class="form-control" id="fname" type="text" required>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+				      	<label for="lname" class="control-label">Last Name</label>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+				    <div class="col-md-3"></div>
+				    <div class="col-md-6">
+				      	<input class="form-control" id="lname" type="text" required>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+				      	<label for="email" class="control-label">Email</label>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+				    <div class="col-md-3"></div>
+				    <div class="col-md-6">
+				      	<input class="form-control" id="email" type="Mail" required>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+			    <div class="form-group">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+				      	<label for="phone" class="control-label">Phone</label>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+				    <div class="col-md-3"></div>
+				    <div class="col-md-6">
+				      	<input class="form-control" id="phone" type="number" required>
+				    </div>
+				    <div class="col-md-3"></div>
+				</div>
+				<div class="form-group">
+				   	<div class="col-md-3"></div>
+				    <div class="col-md-3">
+				    	<p>Leave us a message...</p>
+				    </div>
+				    <div class="col-md-3"></div>
+				    <div class="col-md-3"></div>
+				</div>
+				<br/><br/><br/>
+				<div class="form-group">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<input class="form-control" id="msg" type="text">
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<br/><br/>
+				<div class="form-group">
+					<div class="col-md-5"></div>
+					<div class="col-md-2">
+						<button type="button" onclick="fun()" id="b1" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="background:#001a00;color: white;padding: 1vw;width: 14vw;" data-dismiss="modal">Submit</button>
+						<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Submit</h4>
+        </div>
+        <div class="modal-body">
+          <p>Submission successfull</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+					</div>
+					<div class="col-md-5"></div>
+				</div>
+			</form>
+		</div><br/><br/><br/><br/><br/>
+		<div class="row">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.829484426174!2d-122.38939518519057!3d37.77059622017393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fc4fe655051%3A0x9bde479847eabbf8!2sTCI%20Logistics!5e0!3m2!1sen!2sin!4v1662650347448!5m2!1sen!2sin" width="1200vw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<br/><br/><br/><br/>
+	<div class="container-fluid">
+		<div class="row" style="background:#001a00;color: white;">
+			<br/><br/>
+			<div class="col-md-1"></div>
+			<div class="col-md-1">
+				<p>Amy Kohler</p>
+				<p>Dietitian</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Address</p>
+				<br/>
+				<p>500 Terry Francois Street</p>
+				<p>San Francisco, CA 94158</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Contact</p>
+				<br/>
+				<p>Mail:amykohler1@gmail.com</p>
+				<p>Phone: 123-456-7890</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Socials</p>
+				<br/>
+				<p>Facebook: Amy Kohler</p>
+				<p>Instagram: amy_kohler</p>
+				<p>Twitter: Amy_Kohler</p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dietitian</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		a{
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	function fun(){
+			document.getElementById('user').value=null;
+			document.getElementById('pwd').value=null;
+		}
+	</script>
+	<nav class="navbar">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="#" style="color:black;"><p style="font-family: fantasy; font-size: 25px;">Amy Kohler</p>&nbsp;&nbsp;&nbsp;Dietitian</a>
+    		</div>
+    		<ul class="nav navbar-nav navbar-right">
+      			<li class="active"><a href="index.html">Home</a></li>
+      			<li><a href="About.html">About</a></li>
+      			<li><a href="Services.html">Services</a></li>
+      			<li><a href="Pricing_Plans.html">Pricing Plans</a></li>
+      			<li><a href="Programs.html">Programs</a></li>
+      			<li><a href="Blog.html">Blog</a></li>
+      			<li><a href="Contact.html">Contact</a></li>
+      			<li><a href="Login.html"><i class="fa fa-user-circle" aria-hidden="true"></i> Log In </a></li>
+    		</ul>
+  		</div>
+	</nav>
+	<br/><br/>
+	<div class="container-fluid">
+		<div class="row" style="background: #d9f2e6;text-align: center;">
+			<h2 style="margin-top: 5vw;">Login</h2>
+			<p style="margin-left:25vw;margin-right: 25vw;text-align: center;font-size: 1.5vw;margin-bottom: 5vw;">Logged out of your account? No worries,you can login back to your account here very quickly by filling the following details.</p>
+		</div><br/><br/>
+		<div class="row">
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-md-4"></div>
+					<div class="col-md-2">
+				      	<label for="user" class="control-label">Username</label>
+				    </div>
+				    <div class="col-md-2">
+				        <input class="form-control" id="user" type="text" required>
+				    </div>
+				    <div class="col-md-4"></div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-4"></div>
+					<div class="col-md-2">
+				      	<label for="pwd" class="control-label">Password</label>
+				    </div>
+				    <div class="col-md-2">
+				        <input class="form-control" id="pwd" type="Password" required>
+				    </div>
+				    <div class="col-md-4"></div>
+				</div><br/><br/>
+				<div class="form-group">
+					<div class="col-md-5"></div>
+					<div class="col-md-2">
+				      	<button type="button" onclick="fun()" id="b1" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="background:#001a00;color: white;padding: 1vw;width: 14vw;">Login</button>
+				      	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <p>Login Successful</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+				    </div>
+				    <div class="col-md-5"></div>
+				</div>
+	  		</div>
+	  	</div>
+	</div><br/><br/><br/><br/>
+	<div class="container-fluid">
+		<div class="row" style="background:#001a00;color: white;">
+			<br/><br/>
+			<div class="col-md-1"></div>
+			<div class="col-md-1">
+				<p>Amy Kohler</p>
+				<p>Dietitian</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Address</p>
+				<br/>
+				<p>500 Terry Francois Street</p>
+				<p>San Francisco, CA 94158</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Contact</p>
+				<br/>
+				<p>Mail:amykohler1@gmail.com</p>
+				<p>Phone: 123-456-7890</p>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<p>Socials</p>
+				<br/>
+				<p>Facebook: Amy Kohler</p>
+				<p>Instagram: amy_kohler</p>
+				<p>Twitter: Amy_Kohler</p>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+</body>
+</html>
